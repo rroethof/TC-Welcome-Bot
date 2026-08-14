@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "tcwelcomebot",
+  "version": "${version}",
+  "name": "TC Welcome Bot",
+  "description": "Client-side automatic welcome response for configurable TC server messages.",
+  "authors": ["Ronny"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.roethof.tcwelcomebot.client.TCWelcomeBotClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
