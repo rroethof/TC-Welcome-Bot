@@ -19,7 +19,7 @@ public final class TCWelcomeBotConfig {
             .create();
 
     public boolean enabled = true;
-    public String trigger_regex = "^\\[TC\\]\\s+Hoi\\s+(?<name>[^,]+),\\s+welkom\\s+op\\s+Survivial!.*$";
+    public String trigger_regex = "\\[TC\\]\\s+Hoi\\s+(?<name>[^,]+),\\s+welkom\\s+op\\s+Survival!";
     public String welcome_message = "Welkom $NAAM!\nJe kunt met /pw userdorp een dorp joinen.\nType /regels voor de serverregels.\nType /uitleg voor meer informatie.";
     public List<String> commands = new ArrayList<>();
     public long delay_between_actions_ms = 1000L;
@@ -60,7 +60,7 @@ public final class TCWelcomeBotConfig {
 
     public void sanitize() {
         if (trigger_regex == null || trigger_regex.isBlank()) {
-            trigger_regex = "^\\[TC\\]\\s+Hoi\\s+(?<name>[^,]+),\\s+welkom\\s+op\\s+Survivial!.*$";
+            trigger_regex = "\\[TC\\]\\s+Hoi\\s+(?<name>[^,]+),\\s+welkom\\s+op\\s+Survival!";
         }
         if (welcome_message == null) {
             welcome_message = "";

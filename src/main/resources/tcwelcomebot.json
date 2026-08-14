@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "trigger_regex": "^\\[TC\\]\\s+Hoi\\s+(?<name>[^,]+),\\s+welkom\\s+op\\s+Survivial!.*$",
+  "trigger_regex": "\\[TC\\]\\s+Hoi\\s+(?<name>[^,]+),\\s+welkom\\s+op\\s+Survival!",
   "welcome_message": "Welkom $NAAM!\nJe kunt met /pw userdorp een dorp joinen.\nType /regels voor de serverregels.\nType /uitleg voor meer informatie.",
   "commands": [],
   "delay_between_actions_ms": 1000,

@@ -1,0 +1,12 @@
+# Gradle build directories
+build/
+.gradle/
+bin/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store

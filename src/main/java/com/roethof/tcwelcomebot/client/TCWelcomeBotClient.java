@@ -46,8 +46,8 @@ public final class TCWelcomeBotClient implements ClientModInitializer {
             return;
         }
 
-        Matcher matcher = triggerPattern.matcher(message.trim());
-        if (!matcher.matches()) {
+        Matcher matcher = triggerPattern.matcher(message);
+        if (!matcher.find()) {
             return;
         }
 
